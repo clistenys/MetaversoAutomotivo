@@ -18,6 +18,31 @@ MonoBehaviour:
   - {fileID: 4454977760490615299}
   - {fileID: 4926983368582357105}
   - {fileID: 6478085110231883151}
+  - {fileID: 3640423531575053536}
+  - {fileID: 2613067589875904980}
+  - {fileID: 7173687091276240836}
+--- !u!114 &2613067589875904980
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0775cbb206825d541bf6c0297ee524ca, type: 3}
+  m_Name: SplitToning
+  m_EditorClassIdentifier: 
+  active: 1
+  shadows:
+    m_OverrideState: 1
+    m_Value: {r: 0.18861991, g: 0.19368032, b: 0.20754719, a: 1}
+  highlights:
+    m_OverrideState: 0
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  balance:
+    m_OverrideState: 1
+    m_Value: 18.4
 --- !u!114 &3621318029959498200
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -169,6 +194,40 @@ MonoBehaviour:
   proceduralSoftness:
     m_OverrideState: 0
     m_Value: 0.5
+--- !u!114 &3640423531575053536
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b24b200358312b4fa1004e2431c2f1f, type: 3}
+  m_Name: ShadowsMidtonesHighlights
+  m_EditorClassIdentifier: 
+  active: 1
+  shadows:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: -0.08345592}
+  midtones:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 0.0000000032235696}
+  highlights:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: -0.43200806}
+  shadowsStart:
+    m_OverrideState: 1
+    m_Value: 0.14
+  shadowsEnd:
+    m_OverrideState: 1
+    m_Value: 0.3
+  highlightsStart:
+    m_OverrideState: 0
+    m_Value: 0.55
+  highlightsEnd:
+    m_OverrideState: 0
+    m_Value: 1
 --- !u!114 &4454977760490615299
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -279,13 +338,13 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 4
   cascadeShadowSplit0:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.05
   cascadeShadowSplit1:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.15
   cascadeShadowSplit2:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.3
   cascadeShadowBorder0:
     m_OverrideState: 0
@@ -299,6 +358,28 @@ MonoBehaviour:
   cascadeShadowBorder3:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &7173687091276240836
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5ab44aadfb1804db5fd470983ac1b8, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 0.98776114, y: 1, z: 0.9672237, w: 0.0638195}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.9806278, z: 0.9892049, w: -0.009818661}
 --- !u!114 &8896021737368581315
 MonoBehaviour:
   m_ObjectHideFlags: 3
